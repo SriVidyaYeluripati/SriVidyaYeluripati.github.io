@@ -3,25 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sri Vidya Yeluripati</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Sri Vidya Yeluripati - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #6c757d;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #343a40;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #343a40;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #343a40;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Smooth scrolling effect for navigation links
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                if( target.length ) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+        });
+    </script>
 </head>
-<body class="bg-gray-900 text-gray-300">
-    <header class="text-center py-5 mb-10">
-        <h1 class="text-4xl font-bold text-white">Sri Vidya Yeluripati</h1>
-        <p class="text-xl mt-3">Data Scientist | Software Developer</p>
-        <p>yeluripatisrividya@gmail.com | +49 15754273929</p>
-        <nav class="mt-5">
-            <a href="about.html" class="text-gray-300 hover:text-gray-400 mx-3">About</a>
-            <a href="skills.html" class="text-gray-300 hover:text-gray-400 mx-3">Skills</a>
-            <a href="experience.html" class="text-gray-300 hover:text-gray-400 mx-3">Experience</a>
+<body>
+    <header>
+        <h1>Sri Vidya Yeluripati</h1>
+        <nav>
+            <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills & Tools</a></li>
+                <li><a href="#experience">Professional Experience</a></li>
+                <li><a href="#publications">Research Publications</a></li>
+            </ul>
         </nav>
     </header>
-    <main class="max-w-4xl mx-auto px-5">
-        <section id="bio">
-            <h2 class="text-3xl text-white mb-3">Bio</h2>
-            <p>I'm currently a Master's student at Ruprecht-Karls-Universität Heidelberg, specializing in Data and Computer Science. With a background in technology and extensive professional experience in data analysis and software development, I'm passionate about using data to solve real-world problems.</p>
+
+    <main>
+        <section id="education">
+            <h2>Education</h2>
+            <p>Masters in Data and Computer Science and Engineering - Ruprecht-Karls-Universität of Heidelberg, Germany (Oct 2022 – Aug 2024)</p>
+            <p>Bachelor of Technology in Computer Science and Engineering - Sreenidhi Institute of Science and Technology, Hyderabad, India (Aug 2021)</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Tools</h2>
+            <ul>
+                <li>Programming Languages: SQL, Python, Java</li>
+                <li>Data Visualization and Analytic Tools: Power BI, Tableau, Excel</li>
+                <li>Tools & Frameworks: Informatica PowerCenter, Ab initio, Jupyter Notebook</li>
+                <li>Database Management Systems: Oracle, SQL Server, Snowflake, AWS, Teradata</li>
+                <li>Release Management & Methodologies: JIRA, Jenkins, Git, ServiceNow</li>
+                <li>Operating Systems: Windows, Linux</li>
+                <li>Languages: English(Proficient), German(B1)</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <h3>Data Analyst Intern, Lufthansa Group (Mar 2024 - Present)</h3>
+            <ul>
+                <li>Spearheading data modeling initiatives to enhance the accuracy and accessibility of customer data across the organization.</li>
+                <li>Employing Teradata, SQL for robust database management and stream checking, ensuring real-time data availability.</li>
+                <li>Leveraging Tableau and MS Office for advanced data visualization, presenting actionable insights to stakeholders.</li>
+                <li>Collaborating with cross-functional teams to implement data-driven strategies, optimizing customer engagement and satisfaction.</li>
+            </ul>
+            <h3>ETL Developer, Accenture (Oct 2021 – Dec 2021)</h3>
+            <ul>
+                <li>Worked with reporting tools, Tableau & Power BI.</li>
+                <li>Played a key role in transitioning legacy database systems to high-level database systems such as Oracle DB.</li>
+                <li>Managing software deployments, system updates, or organizational changes using ServiceNow.</li>
+            </ul>
+            <h3>Data Engineering Associate, Accenture (Oct 2021 – Sep 2022)</h3>
+            <ul>
+                <li>Developed 20+ use-cases primarily on Ab-Initio and ETL pipelines for Blue Cross Blue Shield of North Carolina, serving over 3 Million users.</li>
+                <li>Involved in maintaining IT Software Development Life Cycle documents such as URS, SDS, SCR, and DTR, and ensuring effective communication with the product team.</li>
+                <li>Employed SQL, Teradata, and DbVisualizer for data table creation and manipulation.</li>
+            </ul>
+            <h3>Developer, Abjayon Inc (Aug 2020 – Sept 2020)</h3>
+            <ul>
+                <li>Developed a vaccination status web application using SQL and Java enhancing company-wide health monitoring.</li>
+                <li>Used Agile Framework for IT Software Development Life Cycle.</li>
+                <li>Gained proficiency in the SQL utilities application, optimizing internal processes.</li>
+            </ul>
+            <h3>Intern, Cantilever Pvt Ltd (Jun 2020-Aug 2020)</h3>
+            <ul>
+                <li>Lead and contributed to the back-end development of the Medical Store Management platform using SQL Server, Java and Bootstrap CSS.</li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Research Publications</h2>
+            <p>Speech Enhancement using Deep Learning - <a href="#">Link</a> (Aug 2021)</p>
+            <ul>
+                <li>Introduced a technique using SEGAN to minimize background noise in virtual conferences, achieving an accuracy rate of 86%.</li>
+                <li>Published in the International Journal of Trend in Research and Development (IJTRD), ISSN: 2394-9333.</li>
+            </ul>
         </section>
     </main>
+
+    <footer>
+        <p>Contact: yeluripatisrividya@gmail.com | +49 15754273929 | <a href="#">LinkedIn</a></p>
+    </footer>
 </body>
 </html>
