@@ -3,188 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sri Vidya Yeluripati - Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-        }
-
-        header {
-            background-color: #343a40;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-
-        nav ul {
-            list-style-type: none;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            background-color: #6c757d;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 40px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            margin-bottom: 10px;
-            color: #343a40;
-        }
-
-        h3 {
-            margin-top: 20px;
-            color: #343a40;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            color: #343a40;
-        }
-
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer p a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            // Smooth scrolling effect for navigation links
-            $('a[href^="#"]').on('click', function(event) {
-                var target = $(this.getAttribute('href'));
-                if( target.length ) {
-                    event.preventDefault();
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                }
-            });
-        });
-    </script>
+    <title>Sri Vidya Yeluripati</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <header>
-        <h1>Sri Vidya Yeluripati</h1>
-        <nav>
-            <ul>
+    <nav id="desktop-nav">
+        <div class="logo">Sri Vidya Yeluripati</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills & Tools</a></li>
-                <li><a href="#experience">Professional Experience</a></li>
-                <li><a href="#publications">Research Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
+    <!-- Section: Education -->
+    <section id="education">
+        <h1 class="title">Education</h1>
+        <div class="timeline">
+            <div class="container">
+                <div class="text-box">
+                    <h2>Masters in Data and Computer Science and Engineering</h2>
+                    <small>Oct 2022 – Aug 2024</small>
+                    <h3>Ruprecht-Karls-Universität of Heidelberg, Germany</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="text-box">
+                    <h2>Bachelor of Technology in Computer Science and Engineering</h2>
+                    <small>Completed Aug. 2021</small>
+                    <h3>Sreenidhi Institute of Science and Technology, Hyderabad, India</h3>
+                    <p>Grade: 1.51</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Skills -->
+    <section id="skills">
+        <h1 class="title">Skills & Tools</h1>
+        <ul class="skills-list">
+            <li>Programming Languages: SQL, Python, Java</li>
+            <li>Data Visualization and Analytic Tools: Power BI, Tableau, Excel</li>
+            <li>Tools & Frameworks: Informatica PowerCenter, Ab initio, Jupyter Notebook</li>
+            <li>Database Management Systems: Oracle, SQL Server, Snowflake, AWS, Teradata</li>
+            <li>Release Management & Methodologies: JIRA, Jenkins, Git, ServiceNow</li>
+            <li>Operating Systems: Windows, Linux</li>
+            <li>Languages: English (Proficient), German (B1)</li>
+        </ul>
+    </section>
+    <!-- Section: Experience -->
+    <section id="experience">
+        <h1 class="title">Professional Experience</h1>
+        <div class="container">
+            <div class="text-box">
+                <h2>Data Analyst Intern</h2>
+                <small>Mar 2024 - Present</small>
+                <h3>Lufthansa Group</h3>
+                <p>Spearheading data modeling initiatives to enhance the accuracy and accessibility of customer data across the organization. Employing Teradata and SQL for robust database management and stream checking, ensuring real-time data availability. Leveraging Tableau and MS Office for advanced data visualization, presenting actionable insights to stakeholders. Collaborating with cross-functional teams to implement data-driven strategies, optimizing customer engagement and satisfaction.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-box">
+                <h2>ETL Developer</h2>
+                <small>Oct 2021 – Dec 2021</small>
+                <h3>Accenture</h3>
+                <p>Worked with reporting tools, Tableau & Power BI. Played a key role in transitioning legacy database systems to high-level database systems such as Oracle DB. Managing software deployments, system updates, or organizational changes using ServiceNow.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-box">
+                <h2>Data Engineering Associate</h2>
+                <small>Oct 2021 – Sep 2022</small>
+                <h3>Accenture</h3>
+                <p>Developed 20+ use-cases primarily on Ab-Initio and ETL pipelines for Blue Cross Blue Shield of North Carolina, serving over 3 Million users. Involved in maintaining IT Software Development Life Cycle documents such as URS, SDS, SCR, and DTR, and ensuring effective communication with the product team. Employed SQL, Teradata, and DbVisualizer for data table creation and manipulation.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-box">
+                <h2>Developer</h2>
+                <small>Aug 2020 – Sept 2020</small>
+                <h3>Abjayon Inc</h3>
+                <p>Developed a vaccination status web application using SQL and Java enhancing company-wide health monitoring. Used Agile Framework for IT Software Development Life Cycle. Gained proficiency in the SQL utilities application, optimizing internal processes.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-box">
+                <h2>Intern</h2>
+                <small>Jun 2020-Aug 2020</small>
+                <h3>Cantilever Pvt Ltd</h3>
+                <p>Lead and contributed to the back-end development of the Medical Store Management platform using SQL Server, Java and Bootstrap CSS.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Publications -->
+    <section id="publications">
+        <h1 class="title">Publications</h1>
+        <div class="publications-container">
+            <div class="publications-text">
+                <h3>Speech Enhancement using Deep Learning | <a href="https://www.ijtrd.com/papers/IJTRD22787.pdf">IJTRD 2021</a></h3>
+                <p>Introduced a technique using SEGAN to minimize background noise in virtual conferences, achieving an accuracy rate of 86%. Published in the International Journal of Trend in Research and Development (IJTRD), ISSN: 2394-9333.</p>
+            </div>
+        </div>
+        <!-- Add more publications as needed -->
+    </section>
 
-    <main>
-        <section id="education">
-            <h2>Education</h2>
-            <p>Masters in Data and Computer Science and Engineering - Ruprecht-Karls-Universität of Heidelberg, Germany (Oct 2022 – Aug 2024)</p>
-            <p>Bachelor of Technology in Computer Science and Engineering - Sreenidhi Institute of Science and Technology, Hyderabad, India (Aug 2021)</p>
-        </section>
+		    <!-- Contact Section -->
+    <section id="contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:yeluripatisrividya@gmail.com">yeluripatisrividya@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/sri-vidya-yeluripati/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
 
-        <section id="skills">
-            <h2>Skills & Tools</h2>
-            <ul>
-                <li>Programming Languages: SQL, Python, Java</li>
-                <li>Data Visualization and Analytic Tools: Power BI, Tableau, Excel</li>
-                <li>Tools & Frameworks: Informatica PowerCenter, Ab initio, Jupyter Notebook</li>
-                <li>Database Management Systems: Oracle, SQL Server, Snowflake, AWS, Teradata</li>
-                <li>Release Management & Methodologies: JIRA, Jenkins, Git, ServiceNow</li>
-                <li>Operating Systems: Windows, Linux</li>
-                <li>Languages: English(Proficient), German(B1)</li>
-            </ul>
-        </section>
-
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <h3>Data Analyst Intern, Lufthansa Group (Mar 2024 - Present)</h3>
-            <ul>
-                <li>Spearheading data modeling initiatives to enhance the accuracy and accessibility of customer data across the organization.</li>
-                <li>Employing Teradata, SQL for robust database management and stream checking, ensuring real-time data availability.</li>
-                <li>Leveraging Tableau and MS Office for advanced data visualization, presenting actionable insights to stakeholders.</li>
-                <li>Collaborating with cross-functional teams to implement data-driven strategies, optimizing customer engagement and satisfaction.</li>
-            </ul>
-            <h3>ETL Developer, Accenture (Oct 2021 – Dec 2021)</h3>
-            <ul>
-                <li>Worked with reporting tools, Tableau & Power BI.</li>
-                <li>Played a key role in transitioning legacy database systems to high-level database systems such as Oracle DB.</li>
-                <li>Managing software deployments, system updates, or organizational changes using ServiceNow.</li>
-            </ul>
-            <h3>Data Engineering Associate, Accenture (Oct 2021 – Sep 2022)</h3>
-            <ul>
-                <li>Developed 20+ use-cases primarily on Ab-Initio and ETL pipelines for Blue Cross Blue Shield of North Carolina, serving over 3 Million users.</li>
-                <li>Involved in maintaining IT Software Development Life Cycle documents such as URS, SDS, SCR, and DTR, and ensuring effective communication with the product team.</li>
-                <li>Employed SQL, Teradata, and DbVisualizer for data table creation and manipulation.</li>
-            </ul>
-            <h3>Developer, Abjayon Inc (Aug 2020 – Sept 2020)</h3>
-            <ul>
-                <li>Developed a vaccination status web application using SQL and Java enhancing company-wide health monitoring.</li>
-                <li>Used Agile Framework for IT Software Development Life Cycle.</li>
-                <li>Gained proficiency in the SQL utilities application, optimizing internal processes.</li>
-            </ul>
-            <h3>Intern, Cantilever Pvt Ltd (Jun 2020-Aug 2020)</h3>
-            <ul>
-                <li>Lead and contributed to the back-end development of the Medical Store Management platform using SQL Server, Java and Bootstrap CSS.</li>
-            </ul>
-        </section>
-
-        <section id="publications">
-            <h2>Research Publications</h2>
-            <p>Speech Enhancement using Deep Learning - <a href="#">Link</a> (Aug 2021)</p>
-            <ul>
-                <li>Introduced a technique using SEGAN to minimize background noise in virtual conferences, achieving an accuracy rate of 86%.</li>
-                <li>Published in the International Journal of Trend in Research and Development (IJTRD), ISSN: 2394-9333.</li>
-            </ul>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer>
-        <p>Contact: yeluripatisrividya@gmail.com | +49 15754273929 | <a href="#">LinkedIn</a></p>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Sri Vidya Yeluripati, All Rights Reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
