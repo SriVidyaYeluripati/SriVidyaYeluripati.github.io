@@ -4,68 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sri Vidya Yeluripati - Resume</title>
+    <title>Sri Vidya Yeluripati - Interactive Resume</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-text {
+            background: -webkit-linear-gradient(left, #6EE7B7, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
 
-<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-gray-100">
-    <div class="max-w-4xl mx-auto p-5">
-        <div class="mb-10">
-            <h1 class="text-3xl font-bold text-center mb-2">Sri Vidya Yeluripati</h1>
-            <p class="text-center text-gray-600">yeluripatisrividya@gmail.com | +49 15754273929 | <a href="#" class="text-blue-500">LinkedIn</a></p>
-        </div>
-
-        <div class="bg-white shadow-xl rounded-lg p-6">
-            <div class="divide-y-2 divide-gray-200">
-                <div class="pb-8">
-                    <h2 class="text-2xl font-semibold mb-2">Education</h2>
-                    <p class="text-gray-700">Masters in Data and Computer Science and Engineering (Oct 2022 – Aug 2024)</p>
-                    <p>Ruprecht-Karls-Universität of Heidelberg, Germany</p>
-                    <p class="pt-2 text-gray-700">Bachelor of Technology in Computer Science and Engineering – Grade: 1.51 (Aug. 2021)</p>
-                    <p>Sreenidhi Institute of Science and Technology, Hyderabad, Telangana, India</p>
-                </div>
-                <div class="py-8">
-                    <h2 class="text-2xl font-semibold mb-2">Skills & Tools</h2>
-                    <ul class="list-disc list-inside space-y-1">
-                        <li>Programming Languages: SQL, Python, Java.</li>
-                        <li>Data Visualization and analytic tools: Power BI, Tableau, Excel.</li>
-                        <li>Tools & Frameworks: Informatica PowerCenter, Ab initio, Jupyter Notebook.</li>
-                        <li>Database Management Systems: Oracle, SQL Server, Snowflake, AWS, Teradata.</li>
-                        <li>Release Management & Methodologies: JIRA, Jenkins, Git, ServiceNow.</li>
-                        <li>Operating Systems: Windows, Linux.</li>
-                        <li>Languages: English (Proficient), German (B1).</li>
-                    </ul>
-                </div>
-                <div class="py-8">
-                    <h2 class="text-2xl font-semibold mb-2">Professional Experience</h2>
-                    <div class="space-y-5">
-                        <div>
-                            <h3 class="text-lg font-semibold">Data Analyst Intern, Lufthansa Group (Mar 2024 - Present)</h3>
-                            <ul class="list-disc list-inside space-y-1 text-gray-700">
-                                <li>Spearheading data modeling initiatives...</li>
-                                <li>Employing Teradata, SQL for robust database management...</li>
-                                <li>Leveraging Tableau and MS Office for advanced data visualization...</li>
-                                <li>Collaborating with cross-functional teams...</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-semibold">ETL Developer, Accenture (Oct 2021 – Dec 2021)</h3>
-                            <ul class="list-disc list-inside space-y-1 text-gray-700">
-                                <li>Worked with reporting tools, Tableau & Power BI.</li>
-                                <li>Played a key role in transitioning legacy database systems...</li>
-                            </ul>
-                        </div>
-                        <!-- More experiences -->
-                    </div>
-                </div>
-                <div class="py-8">
-                    <h2 class="text-2xl font-semibold mb-2">Research Publications</h2>
-                    <p>Speech Enhancement using Deep Learning | <a href="#" class="text-blue-500">[Link]</a> (Aug 21)</p>
-                    <p class="text-gray-700">Introduced a technique using SEGAN...</p>
-                </div>
+<body class="bg-gray-800 text-white font-sans leading-normal tracking-normal">
+    <nav id="header" class="fixed w-full z-10 top-0">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+            <div class="pl-4 flex items-center">
+                <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+                    <!--Icon from: http://www.potlabicons.com/ -->
+                    Sri Vidya Yeluripati
+                </a>
+            </div>
+            <div class="block lg:hidden pr-4">
+                <button id="nav-toggle" class="flex items-center p-1 text-orange-800 hover:text-gray-900">
+                    <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
             </div>
         </div>
+    </nav>
+    <div class="container mx-auto flex flex-wrap py-6">
+        <!-- Posts Section -->
+        <section class="w-full flex flex-col items-center px-3">
+            <article class="flex flex-col shadow my-4">
+                <!-- Article Image -->
+                <a href="#" class="hover:opacity-75">
+                    <img src="https://via.placeholder.com/600" alt="Placeholder" class="w-full">
+                </a>
+                <div class="bg-white flex flex-col justify-start p-6">
+                    <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">About Me</a>
+                    <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">Sri Vidya Yeluripati</a>
+                    <p class="text-sm pb-3">
+                        Currently a Master's student in Data and Computer Science at the Ruprecht-Karls-Universität of Heidelberg, Germany, with professional experience as a Data Analyst Intern at Lufthansa Group and roles in software development and data engineering.
+                    </p>
+                    <a href="#" class="uppercase text-gray-800 hover:text-black">Continue Reading <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+            <!--Education & Skills-->
+            <div class="bg-white w-full p-8 mt-4">
+                <h2 class="gradient-text text-3xl font-bold mb-4">Education & Skills</h2>
+                <div class="flex flex-wrap">
+                    <div class="w-full sm:w-1/2 p-4">
+                        <div class="flex relative">
+                            <div class="p-6 rounded-lg bg-gray-200 text-gray-700">
+                                <h3 class="text-2xl mb-3">Education</h3>
+                                <p class="leading-normal">
+                                    Master's in Data and Computer Science, Heidelberg University, 2022-2024.
+                                    <br>
+                                    B.Tech in Computer Science, Sreenidhi Institute, India, Graduated 2021.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 p-4">
+                        <div class="flex relative">
+                            <div class="p-6 rounded-lg bg-gray-200 text-gray-700">
+                                <h3 class="text-2xl mb-3">Skills</h3>
+                                <p class="leading-normal">SQL, Python, Java, Data Visualization (Power BI, Tableau), Database Management (Oracle, SQL Server), Agile & Scrum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+    <script>
+        /*Toggle dropdown list*/
+        var navMenuDiv = document.getElementById("nav-content");
+        var navMenu = document.getElementById("nav-toggle");
+
+        document.onclick = check;
+        function check(e) {
+            var target = (e && e.target) || (event && event.srcElement);
+
+            //Nav Menu
+            if (!checkParent(target, navMenuDiv)) {
+                // click NOT on the menu
+                if (checkParent(target, navMenu)) {
+                    // click on the link
+                    if (navMenuDiv.classList.contains("hidden")) {
+                        navMenuDiv.classList.remove("hidden");
+                    } else { navMenuDiv.classList.add("hidden"); }
+                } else {
+                    // click both outside link and outside menu, hide menu
+                    navMenuDiv.classList.add("hidden");
+                }
+            }
+        }
+        function checkParent(t, elm) {
+            while (t.parentNode) {
+                if (t == elm) { return true; }
+                t = t.parentNode;
+            }
+            return false;
+        }
+    </script>
 </body>
 
 </html>
